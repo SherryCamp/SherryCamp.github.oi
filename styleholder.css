@@ -1,0 +1,32 @@
+.theme{ background-color: papayawhip;
+background-color: rgba(0, 0, 0, 0)
+
+
+}
+h1{
+font-family: 'Lato', sans-serif;
+font-family: 'Tangerine', cursive;
+}
+navbar-logo{
+background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+}
+
+#logo {
+color: papayawhip;
+
+background-color: #ff8177;
+background-image: linear-gradient(to top, #b508ff 0%, #ffb199 100%); 
+}
+
+
+.navbar-links:hover {
+  color: rgb(149, 24, 252);
+}
+.button {
+    background: rgb(131, 58, 180);
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #3f5efb);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #3f5efb);
+  color: #fff;
+}
+
