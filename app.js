@@ -1,30 +1,5 @@
 // create a function that will slide the menu in on click 
 
-// const navSlide = () => {
-//     const burger = document.querySelector('.burger');
-//     const nav = document.querySelector('.nav-links');
-//     // add the nav links query for animation
-//     const navLinks = document.querySelectorAll('.nav-links li');
-//         // togle nav
-//     burger.addEventListener('click', () => {
-//         nav.classList.toggle('nav-active');
-   
-//     //Animate links
-//         navLinks.forEach((link, index) => {
-//             link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 1.5}s`;
-            
-//         });
-// // burger animation
-//  burger.classList.toggle('toggle');
-
-
-// });
-// } 
-// need to invoke the slide
-
-// navSlide();
-
-// end of navbar animation
 
 
 const menu = document.querySelector('#mobile-menu');
@@ -45,7 +20,7 @@ const highlightMenu = () => {
   const homeMenu = document.querySelector('#home-page');
   const aboutMenu = document.querySelector('#about-page');
   const projectsMenu = document.querySelector('#projects-page');
-  const galleryMenu = document.querySelector('#gallery-page');
+  
   let scrollPos = window.scrollY;
   // console.log(scrollPos);
 
@@ -53,22 +28,20 @@ const highlightMenu = () => {
   if (window.innerWidth > 960 && scrollPos < 600) {
     homeMenu.classList.add('highlight');
     aboutMenu.classList.remove('highlight');
-     galleryMenu.classList.remove('highlight');
+     projectsMenu.classList.remove('highlight');
+   
     return;
   } else if (window.innerWidth > 960 && scrollPos < 1400) {
     aboutMenu.classList.add('highlight');
     homeMenu.classList.remove('highlight');
-    galleryMenu.classList.remove('highlight');
     projectsMenu.classList.remove('highlight');
     return;
   } else if (window.innerWidth > 960 && scrollPos < 2345) {
     projectsMenu.classList.add('highlight');
-    
+    homeMenu.classList.remove('highlight');
     aboutMenu.classList.remove('highlight');
-     galleryMenu.classList.remove('highlight');
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 6000) {
-    galleryMenu.classList.add('highlight');
+  } else if (window.innerWidth > 960 && scrollPos < 3000) {
     aboutMenu.classList.remove('highlight');
      projectsMenu.classList.remove('highlight');
     return;
